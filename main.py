@@ -29,8 +29,16 @@
 # say_hello()
 # say_bye()
 
-#2.6 Parameters
-def say_hello(user_name):
-  print("hello", user_name, "how R U?")
+# 2.6 Parameters
+# def say_hello(user_name):
+#   print("hello", user_name, "how R U?")
+#
+# say_hello("hongku")
 
-say_hello("hongku")
+# 2.7 Multiple Parameters
+
+def say_hello(user_name, user_age):
+  print("hello", user_name)
+  print("you are", user_age,"years old")
+
+say_hello("hongku",12)

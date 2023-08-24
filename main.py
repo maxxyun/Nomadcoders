@@ -36,9 +36,23 @@
 # say_hello("hongku")
 
 # 2.7 Multiple Parameters
+# def say_hello(user_name, user_age):
+#     print("hello", user_name)
+#     print("you are", user_age, "years old")
+#
+# say_hello("hongku", 12)
 
-def say_hello(user_name, user_age):
-  print("hello", user_name)
-  print("you are", user_age,"years old")
+# 2.8 Recap
+# def tax_calculator(money):
+#     print(money * 0.35)
+#
+# tax_calculator(15000000000000)
+# tax_calculator(150)
 
-say_hello("hongku",12)
+# 2.9 Default Parameters
+def say_hello(user_name="anonymous"):
+    print("hello", user_name)
+
+
+say_hello("nico")
+say_hello()

@@ -137,10 +137,46 @@
 # else:
 #     print("Wrong password")
 
-winner = 10
-if winner > 10:
-    print("Winner is greater than 10")
-elif winner <= 10:
-    print("Winner is less than 10")
+# winner = 10
+# if winner > 10:
+#     print("Winner is greater than 10")
+# elif winner <= 10:
+#     print("Winner is less than 10")
+# else:
+#     print("Winner is 10")
+
+
+# 3.2 Recap
+# winner = 50           # >, <, >=, <=, ==, !=
+# if winner != 10:
+#     print("If")
+# elif winner <= 25:
+#     print("elif")
+# elif winner == 0:
+#     print("elif 2")
+# elif winner == 50:
+#     print("elif 3")
+# else:
+#     print("Else")
+
+
+# 3.3 And & Or
+age = int(input("How old are you?"))
+if age < 18:
+    print("You can't drink.")
+elif age >= 18 and age <= 35:  # 18 <= age <= 35:
+    print("You drink beer!")
+elif age == 60 or age == 70:
+    print("Birthday party!!")
 else:
-    print("Winner is 10")
+    print("Go ahead!")
+
+True and True == True
+True and False == False
+False and True == False
+False and False == False
+
+True or True == True
+True or False == True
+False or True == True
+False or False == False

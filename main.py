@@ -161,22 +161,38 @@
 
 
 # 3.3 And & Or
-age = int(input("How old are you?"))
-if age < 18:
-    print("You can't drink.")
-elif age >= 18 and age <= 35:  # 18 <= age <= 35:
-    print("You drink beer!")
-elif age == 60 or age == 70:
-    print("Birthday party!!")
-else:
-    print("Go ahead!")
+# age = int(input("How old are you?"))
+# if age < 18:
+#     print("You can't drink.")
+# elif age >= 18 and age <= 35:  # 18 <= age <= 35:
+#     print("You drink beer!")
+# elif age == 60 or age == 70:
+#     print("Birthday party!!")
+# else:
+#     print("Go ahead!")
+#
+# True and True == True
+# True and False == False
+# False and True == False
+# False and False == False
+#
+# True or True == True
+# True or False == True
+# False or True == True
+# False or False == False
 
-True and True == True
-True and False == False
-False and True == False
-False and False == False
 
-True or True == True
-True or False == True
-False or True == True
-False or False == False
+# 3.4 Python Standard Library
+# https://docs.python.org/ko/3/library/index.html
+
+from random import randint
+
+user_choice = int(input("choose number."))
+pc_choice = randint(1, 50)
+
+if user_choice == pc_choice:
+    print("You won!")
+elif user_choice > pc_choice:
+    print("Lower! Cpmputer chose", pc_choice)
+elif user_choice < pc_choice:
+    print("Higher! Computer chose", pc_choice)

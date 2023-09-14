@@ -185,6 +185,7 @@
 # 3.4 Python Standard Library
 # https://docs.python.org/ko/3/library/index.html
 
+"""
 from random import randint
 
 user_choice = int(input("choose number."))
@@ -196,3 +197,12 @@ elif user_choice > pc_choice:
     print("Lower! Cpmputer chose", pc_choice)
 elif user_choice < pc_choice:
     print("Higher! Computer chose", pc_choice)
+"""
+
+# 3.5 While
+
+distance = 0
+
+while distance < 20:
+    print("I'm running", distance, "km")
+    distance = distance + 1

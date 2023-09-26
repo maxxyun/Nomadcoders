@@ -246,7 +246,7 @@ elif user_choice < pc_choice:
 #         print("Higher!")
 
 # 4.0 Methods
-#  data structure : 데이터를 구조화 할때 사용
+#  data structure : 데이터를 구조화 할때 사용 3종
 # 1. list
 # 2. tuple
 # 3. dictionary
@@ -258,4 +258,6 @@ elif user_choice < pc_choice:
 # print(days_of_week)
 
 name = "nico"
-print(name.replace("o","🤣"))
+print(name.endswith("o"))
+
+# 4.1 Lists

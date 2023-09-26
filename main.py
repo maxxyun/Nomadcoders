@@ -228,21 +228,34 @@ elif user_choice < pc_choice:
 
 # 3.7 Recap
 
-from random import randint
-
-print("Welcome to Python Casino")
-pc_choice = randint(1, 100)
-
-playing = True
-
-while playing:
-    user_choice = int(input("Choose number (1-100) :"))
-    if user_choice == pc_choice:
-        print("You won!")
-        playing = False
-    elif user_choice > pc_choice:
-        print("Lower!")
-    elif user_choice < pc_choice:
-        print("Higher!")
+# from random import randint
+#
+# print("Welcome to Python Casino")
+# pc_choice = randint(1, 100)
+#
+# playing = True
+#
+# while playing:
+#     user_choice = int(input("Choose number (1-100) :"))
+#     if user_choice == pc_choice:
+#         print("You won!")
+#         playing = False
+#     elif user_choice > pc_choice:
+#         print("Lower!")
+#     elif user_choice < pc_choice:
+#         print("Higher!")
 
 # 4.0 Methods
+#  data structure : 데이터를 구조화 할때 사용
+# 1. list
+# 2. tuple
+# 3. dictionary
+
+# days_of_week = "Mon, Tue, Wed, Thu, Fri"
+# print (days_of_week)
+
+# days_of_week = ["Mon","Tue","Wed","Thur","Fri"]
+# print(days_of_week)
+
+name = "nico"
+print(name.replace("o","🤣"))

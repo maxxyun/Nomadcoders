@@ -257,7 +257,20 @@ elif user_choice < pc_choice:
 # days_of_week = ["Mon","Tue","Wed","Thur","Fri"]
 # print(days_of_week)
 
-name = "nico"
-print(name.endswith("o"))
+# name = "nico"
+# print(name.endswith("o"))
 
 # 4.1 Lists
+
+days_of_week = ["Mon","Tue","Wed","Thur","Fri"]
+
+print(days_of_week)
+
+days_of_week.append("Sat")
+print(days_of_week)
+
+days_of_week.append("Sun")
+print(days_of_week)
+
+print(days_of_week[1])
+print(days_of_week[2])

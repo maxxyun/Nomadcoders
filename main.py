@@ -262,17 +262,23 @@ elif user_choice < pc_choice:
 
 # 4.1 Lists
 
-days_of_week = ["Mon","Tue","Wed","Thur","Fri", 1, 2, 3, True, False, "hi", "black", [1, 2, 3, [False, True]]]
-
-print(days_of_week)
-
-days_of_week.append("Sat")
-print(days_of_week)
-
-days_of_week.append("Sun")
-print(days_of_week)
-
-print(days_of_week[1])
-print(days_of_week[2])
+# days_of_week = ["Mon","Tue","Wed","Thur","Fri", 1, 2, 3, True, False, "hi", "black", [1, 2, 3, [False, True]]]
+#
+# print(days_of_week)
+#
+# days_of_week.append("Sat")
+# print(days_of_week)
+#
+# days_of_week.append("Sun")
+# print(days_of_week)
+#
+# print(days_of_week[1])
+# print(days_of_week[2])
 
 # 4.2 Tuples
+
+days = ("Mon", "Tue", "Wed")    # 튜플은 내부 데이터를 변경하지 못한다. .count랑 .index만 사용 가능.
+
+print(days[-2])  # 튜플은 괄호가 리스트랑 반대. 만들때는 ( ) 뭔가 할때는 [ ] 를 쓴다.
+
+# 4.3 Dicts

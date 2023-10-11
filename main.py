@@ -306,3 +306,5 @@ elif user_choice < pc_choice:
  player['fav_food'].append("☕")
  print(player.get('fav_food'))
  print(player['fav_food'])
+
+# 4.3 한번 더 보기

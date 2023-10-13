@@ -283,28 +283,38 @@ elif user_choice < pc_choice:
 
 # 4.3 Dicts
 
-player={
-     'name':'nico',
-     'age':12,
-     # 'alive':True
-     'fav_food': ["🍕","🍔"]
- }
+# player={
+#      'name':'nico',
+#      'age':12,
+#      # 'alive':True
+#      'fav_food': ["🍕","🍔"]
+#  }
+#
+# print(player)
+# print(player.get('age'))
+# print(player.get('fav_food'))
+# print(player['fav_food'])
+#
+# print(player)
+# player.pop('age')  # age를 지움
+# print(player)
+#
+# print(player)
+# player['xp']=1500  # 추가
+# print(player)
+#
+# print(player)
+# player['fav_food'].append("☕")
+# print(player.get('fav_food'))
+# print(player['fav_food'])
 
-print(player)
-print(player.get('age'))
-print(player.get('fav_food'))
-print(player['fav_food'])
+#4.4 Recap
+# 콤마 다음으로 오는건 메소드
+print("nico".endswith("a"))
 
-print(player)
-player.pop('age')  # age를 지움
-print(player)
+# 리스트
+numbers =[5,3,1,5,7,3,"True", True, 12]
+numbers.append(["🍕","🍔"])
+print(numbers)
 
-print(player)
-player['xp']=1500  # 추가
-print(player)
-
-print(player)
-player['fav_food'].append("☕")
-print(player.get('fav_food'))
-print(player['fav_food'])
-
+print(numbers[5])

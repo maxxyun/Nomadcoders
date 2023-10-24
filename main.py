@@ -322,24 +322,37 @@ elif user_choice < pc_choice:
 # numbers=(1,2,3,4,5,True,"xxxxx")
 # print(numbers[-1])
 
-# 딕셔너리 {key:value}
-player={
-    "name":"nico",
-    "age":12,
-    "alive":True,
-    "fav_food": ("🍕","🍔"),
-    "friend":{
-        "name":"lynn",
-        "fav_food":["🍎"]
-    }
-}
-player["fav_food"]="🥐"
-player.pop("alive")
-print(player["friend"]["fav_food"])
-player["friend"]["fav_food"].append("🍌")
-print(player["age"])
-print(player["friend"]["fav_food"])
-print(player["fav_food"])
-print(player)
+# # 딕셔너리 {key:value}
+# player={
+#     "name":"nico",
+#     "age":12,
+#     "alive":True,
+#     "fav_food": ("🍕","🍔"),
+#     "friend":{
+#         "name":"lynn",
+#         "fav_food":["🍎"]
+#     }
+# }
+# player["fav_food"]="🥐"
+# player.pop("alive")
+# print(player["friend"]["fav_food"])
+# player["friend"]["fav_food"].append("🍌")
+# print(player["age"])
+# print(player["friend"]["fav_food"])
+# print(player["fav_food"])
+# print(player)
 
 #4.5 For Loops (07:26)
+websites = (
+    "google.com",
+    "airbnb.com",
+    "twitter.com",
+    "facebook.com",
+    "tiktok.com"
+)
+
+for potato in websites:
+    print("potato is equals to", potato)
+    print("hello",potato)
+
+#4.6 URL Formatting

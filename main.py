@@ -308,7 +308,7 @@ elif user_choice < pc_choice:
 # print(player.get('fav_food'))
 # print(player['fav_food'])
 
-#4.4 Recap
+# 4.4 Recap
 # # 콤마 다음으로 오는건 메소드
 # print("nico".endswith("a"))
 #
@@ -342,17 +342,26 @@ elif user_choice < pc_choice:
 # print(player["fav_food"])
 # print(player)
 
-#4.5 For Loops (07:26)
+## 4.5 For Loops (07:26)
+# websites = ("google.com", "airbnb.com", "twitter.com", "facebook.com", "tiktok.com")
+#
+# for potato in websites:
+#     print("potato is equals to", potato)
+#     print("hello", potato)
+
+# 4.6 URL Formatting
 websites = (
     "google.com",
     "airbnb.com",
-    "twitter.com",
+    "https://twitter.com",
     "facebook.com",
-    "tiktok.com"
+    "https://tiktok.com",
 )
+for website in websites:
+    if not website.startswith(
+        "https://"
+    ):  # => if website.startswith("https://")==False:
+        website = f"https://{website}"
+    print(website)
 
-for potato in websites:
-    print("potato is equals to", potato)
-    print("hello",potato)
-
-#4.6 URL Formatting
+# 4.7 Requests

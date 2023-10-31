@@ -349,7 +349,24 @@ elif user_choice < pc_choice:
 #     print("potato is equals to", potato)
 #     print("hello", potato)
 
-# 4.6 URL Formatting
+## 4.6 URL Formatting
+# websites = (
+#     "google.com",
+#     "airbnb.com",
+#     "https://twitter.com",
+#     "facebook.com",
+#     "https://tiktok.com",
+# )
+# for website in websites:
+#     if not website.startswith(
+#         "https://"
+#     ):  # => if website.startswith("https://")==False:
+#         website = f"https://{website}"
+#     print(website)
+
+# 4.7 Requests
+
+
 websites = (
     "google.com",
     "airbnb.com",
@@ -363,5 +380,3 @@ for website in websites:
     ):  # => if website.startswith("https://")==False:
         website = f"https://{website}"
     print(website)
-
-# 4.7 Requests

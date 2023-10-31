@@ -365,7 +365,10 @@ elif user_choice < pc_choice:
 #     print(website)
 
 # 4.7 Requests
+# https://www.pypi.org  Python Standard Library에 포함되지 않은 package를 찾는 곳.
 
+pip install requests
+import requests
 
 websites = (
     "google.com",

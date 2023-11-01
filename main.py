@@ -383,17 +383,42 @@ elif user_choice < pc_choice:
 #         website = f"https://{website}"
 #     print(website)
 
-# 4.8 Status Codes
-# https://developer.mozilla.org/ko/docs/Web/HTTP/Status     http의 상태 코드
-# HTTP Status 코드 정리글입니다.
-# https://www.whatap.io/ko/blog/40
+# # 4.8 Status Codes
+# # https://developer.mozilla.org/ko/docs/Web/HTTP/Status     http의 상태 코드
+# # HTTP Status 코드 정리글입니다.
+# # https://www.whatap.io/ko/blog/40
+# #
+# # 1XX : Information responses
+# # 2XX : Successful responses
+# # 3XX : Redirection messages
+# # 4XX : Client error responses
+# # 5XX : Server error reponses
 #
-# 1XX : Information responses
-# 2XX : Successful responses
-# 3XX : Redirection messages
-# 4XX : Client error responses
-# 5XX : Server error reponses
+# from requests import get
+#
+# websites = (
+#     "google.com",
+#     "airbnb.com",
+#     "https://twitter.com",
+#     "facebook.com",
+#     "https://tiktok.com",
+# )
+#
+# results = {}
+#
+# for website in websites:
+#     if not website.startswith(
+#         "https://"
+#     ):  # => if website.startswith("https://")==False:
+#         website = f"https://{website}"
+#     response = get(website)
+#     if response.status_code == 200:
+#         results[website] = "OK"
+#     else:
+#         results[website] = "FAILED"
+# print(results)
 
+# 4.9 Recap
 from requests import get
 
 websites = (
@@ -406,16 +431,26 @@ websites = (
 
 results = {}
 
-for website in websites:
+for (
+    website
+) in (
+    websites
+):  # 현재 실행중인 item에 접근하는 방법으로 variable(website)을 만든다. 한번에 모두 가져오는게 아닌 한개씩 가져온다.
     if not website.startswith(
         "https://"
     ):  # => if website.startswith("https://")==False:
-        website = f"https://{website}"
+        website = f"https://{website}"  # f를 사용해 번수를 안에 넣을 수 있음
     response = get(website)
-    if response.status_code == 200:
-        results[website] = "OK"
+    if response.status_code >= 500:
+        results[website] = "서버에러응답"
+    elif response.status_code >= 400:
+        results[website] = "클라이언트 에러 응답"
+    elif response.status_code >= 300:
+        results[website] = "리다이렉션 메시지"
+    elif response.status_code >= 200:
+        results[website] = "성공응답"
+    elif response.status_code >= 100:
+        results[website] = "정보응답"
     else:
         results[website] = "FAILED"
 print(results)
-
-# 4.9 Recap

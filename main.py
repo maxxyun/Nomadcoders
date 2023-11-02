@@ -455,4 +455,31 @@ elif user_choice < pc_choice:
 #         results[website] = "FAILED"
 # print(results)
 
-# 5.1 Introduction (03:02)
+# 5.1 Introduction
+# 5.2 Installation
+# 5.3 Initial Request
+
+# from requests import get
+#
+# base_url = "http://weworkremotely.com/remote-jobs/serch?term="
+# search_term = "python"
+#
+# response = get(f"{base_url}{search_term}")
+# if response.status_code != 200:
+#     print("Can't request website")
+# else:
+#     print(response.text)
+
+
+from requests import get
+
+base_url = "https://blog.feedback.io/?cat=120602&s="
+search_term = "ux"
+
+response = get(f"{base_url}{search_term}")
+if response.status_code != 200:
+    print("Can't request website")
+else:
+    print(response.text)
+
+# 5.4 BeautifulSoup

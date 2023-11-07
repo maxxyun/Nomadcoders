@@ -520,11 +520,46 @@ elif user_choice < pc_choice:
 # class뒤에 _를 붙인 이유는 class라는 단어는 이미 python에서 사용 (import = 1 이런거 안됨)
 
 
-def say_hello(name, age):
-    print(f"Hello {name} you are {age} years old")
-
-
-say_hello("nico", 12)
-say_hello(age=12, name="nico")
+# def say_hello(name, age):
+#     print(f"Hello {name} you are {age} years old")
+#
+#
+# say_hello("nico", 12)
+# say_hello(age=12, name="nico")
 
 # 5.6 Job Posts
+# from requests import get
+# from bs4 import BeautifulSoup
+#
+# base_url = "http://weworkremotely.com/remote-jobs/serch?term="
+# search_term = "python"
+#
+# response = get(f"{base_url}{search_term}")
+# if response.status_code != 200:
+#     print("Can't request website")
+# else:
+#     soup = BeautifulSoup(response.text, "html.parser")
+#     job = soup.find_all("section", class_="jobs")
+#     print(len(jobs))
+#     for job_section in jobs:
+#         job_posts = job_section.find_all("li")
+#         job_posts.pop(-1)       # 0부터 숫자를 샌다.
+#         for post in job_posts:
+#             print(post)
+#             print("//////////////////////")  # 분리 기호
+
+
+from requests import get
+from bs4 import BeautifulSoup
+
+base_url = "https://blog.feedback.io/?cat=120602&s="
+search_term = "ux"
+
+response = get(f"{base_url}{search_term}")
+if response.status_code != 200:
+    print("Can't request website")
+else:
+    soup = BeautifulSoup(response.text, "html.parser")
+    title = soup.find_all("div", class_"site-main")
+    for job_section in jobs:
+        print(job_section.find_all("li"))

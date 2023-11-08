@@ -342,7 +342,7 @@ elif user_choice < pc_choice:
 # print(player["fav_food"])
 # print(player)
 
-## 4.5 For Loops (07:26)
+## 4.5 For Loops
 # websites = ("google.com", "airbnb.com", "twitter.com", "facebook.com", "tiktok.com")
 #
 # for potato in websites:

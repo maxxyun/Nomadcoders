@@ -18,3 +18,4 @@
 #         for post in job_posts:
 #             print(post)
 #             print("//////////////////////")  # 분리 기호
+

@@ -32,5 +32,4 @@ else:
     soup = BeautifulSoup(response.text, "html.parser")
     title = soup.find_all("div", class_"site-main")
     for job_section in jobs:
-        sfsef
         print(job_section.find_all("li"))

@@ -606,7 +606,7 @@ from bs4 import BeautifulSoup
 
 base_url = "https://blog.feedback.io/?cat=120602&s="
 search_term = "ux"
-asdf
+
 response = get(f"{base_url}{search_term}")
 if response.status_code != 200:
     print("Can't request website")

@@ -615,5 +615,3 @@ else:
     title = soup.find_all("div", class_"site-main")
     for job_section in jobs:
         print(job_section.find_all("li"))
-
-# afadsaffljsafaegrgaeagdfagadsf

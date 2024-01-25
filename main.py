@@ -611,7 +611,7 @@ response = get(f"{base_url}{search_term}")
 if response.status_code != 200:
     print("Can't request website")
 else:
-    soup = BeautifulSoup(response.text, "html.parser")
+    soup = BeautifulSoup(response.text, "html.parser")adfqedva
     title = soup.find_all("div", class_"site-main")
     for job_section in jobs:
         print(job_section.find_all("li"))

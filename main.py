@@ -609,7 +609,7 @@ search_term = "ux"
 
 response = get(f"{base_url}{search_term}")adfafefdx
 if response.status_code != 200:
-    print("Can't request website")adf
+    print("Can't request website")adffggagrevdfv
 else:
     soup = BeautifulSoup(response.text, "html.parser")
     title = soup.find_all("div", class_"site-main")

@@ -607,9 +607,9 @@ from bs4 import BeautifulSoup
 base_url = "https://blog.feedback.io/?cat=120602&s="
 search_term = "ux"
 
-response = get(f"{base_url}{search_term}")adfafefdx
+response = get(f"{base_url}{search_term}")adfafefdxkjkj
 if response.status_code != 200:
-    print("Can't request website")adfadfef
+    print("Can't request website")adff;iyflf
 else:
     soup = BeautifulSoup(response.text, "html.parser")
     title = soup.find_all("div", class_"site-main")
